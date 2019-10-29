@@ -1,6 +1,11 @@
 module github.com/prometheus/common
 
+go 1.12
+
+replace github.com/Sirupsen/logrus => github.com/zhaolanbao/logrus v1.4.4-0.20190927060944-314490f031dd
+
 require (
+	github.com/Sirupsen/logrus v0.0.0-00010101000000-000000000000 // indirect
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751 // indirect
 	github.com/alecthomas/units v0.0.0-20190717042225-c3de453c63f4 // indirect
 	github.com/go-kit/kit v0.9.0
@@ -12,11 +17,8 @@ require (
 	github.com/pkg/errors v0.8.1
 	github.com/prometheus/client_golang v1.0.0
 	github.com/prometheus/client_model v0.0.0-20190129233127-fd36f4220a90
-	github.com/sirupsen/logrus v1.4.2
 	golang.org/x/net v0.0.0-20190613194153-d28f0bde5980 // indirect
 	golang.org/x/sys v0.0.0-20190422165155-953cdadca894
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6
 	gopkg.in/yaml.v2 v2.2.4
 )
-
-go 1.11
